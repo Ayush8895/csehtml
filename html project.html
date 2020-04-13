@@ -1,0 +1,144 @@
+<html>
+    <head><title>bill</title>
+        <body>
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type=""href="mystyle.css">
+        <style>
+          #more {display: none;}
+                 .topnav{
+                  font-size : 20px;
+                }
+                .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  border: 6px solid rgba(20, 17, 17, 0.829);
+  padding: 0px;
+  width: 250px;
+  height:40px ;
+  width: 200px;
+  margin-left:0px;
+  
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(180, 65, 36); 
+}
+
+.panel {
+  padding: 0 10px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.288);
+  overflow: hidden;
+}
+                  </style>
+                
+                
+
+</head>
+<header><b>INDIAN ELECTRICITY BILL</b></header>
+<nav><div class="topnav">
+  <a class="active" href="html project.html"  target="_self">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact us</a>
+  </div></nav>
+  <div id="side" style="float: right"><h2 >Quick Links</h2>
+    <a href="file:///C:/Users/This_PC/Desktop/html/electricity3.html" target="_slef">1.pay your bill</a><br>
+    <a href="file:///C:/Users/This_PC/Desktop/html/electricity2.html" target="_self">2.Consuption History</a><br>
+    <a href="file:///C:/Users/This_PC/Desktop/html/nearestservice.html" target="_self">3.Nearest Service</a><br>
+    <a href="default.asp" target="_self">4.New Connection</a><br><br><br>
+    <div id="side2"><h3>High Consuption State</h3> <p>1 Goa <br> 2 Puducherry <br>3 Punjab<br>4 Gujarat<br>5 Haryana<br>6 Delhi<br>7 Chandigarh<br><span id="dots">...</span><span id="more">8 Himachal Pradesh<br>9 Tamil Nadu<br>10 Andhra Pradesh<br>11 Odisha<br>12 Sikkim<br>13 Rajasthan<br></span></p>
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+  </div>
+  <div id="center"><p><h2>Tips to save electricity</h2><br>
+    Turn off unnecessary lights. <br>
+    Use natural light. <br>
+    Use task lighting. <br>
+    Take shorter showers. <br>
+    Turn water off when shaving, washing hands, brushing teeth. <br>
+    Fix that leaky faucet. <br>
+    Unplug unused electronics. <br>
+    Ditch the desktop computer.<br>
+    Save energy in how you wash and dry clothes. <br>
+    Understand and improve your home's energy use.<br>
+    Save energy in the kitchen.<br>
+    Manage your heating and cooling. <br>
+    Get the best energy deal.</p>
+  </div>
+    
+
+<div id="box1" class="login-container">
+      <h2>LOG IN</h2>
+      <input type="text" placeholder="Username" name="username" ><br><br>
+      <input type="text" placeholder="Password" name="psw"><br>
+      <button type="submit">submit</button>
+   
+  </div>
+ 
+  <div id="box2" class="login-container">
+  
+    <h2>FAQs</h2>
+
+<button class="accordion">How to save electricity</button>
+<div class="panel">
+  <p>1) Unplug devices when they are not in use.<br>
+    2) Use large appliances together. <br>
+    3)Install a programmable thermostat.<br>
+    4)Maintain your insulation.<br>
+    5)Adjust light use. <br>
+    6)Unplug your freezer monthly.<br>
+    7)Stay up to date on maintenance. .</p>
+</div>
+
+<button class="accordion">How to pay your bill</button>
+<div class="panel">
+  <p> consequat.first click on "pay your bill" present in quick links<br>A new tab will open hence you can pay your bill online</p>
+</div>
+
+<button class="accordion"> My consuption history.</button>
+<div class="panel">
+  <p>  click on consuption history present in quick links <br>a new tab will opan in which you will be able to see your consuption history</p>
+</div>
+
+<footer class="footer">sdfdsf</footer>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+
+  
+</body>
+</html>
